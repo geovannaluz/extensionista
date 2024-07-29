@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Flashcards</h1>
+    </header>
+    <main>
+        <section id="flashcardSection">
+            <div class="flashcard">
+                <img src="maça.jpg" alt="Maçã">
+                <p>Maçã</p>
+                <button class="audioButton" onclick="playSound('audio/apple.mp3')">🔊</button>
+            </div>
+            <div class="flashcard">
+                <img src="banana.jpg" alt="Banana">
+                <p>Banana</p>
+                <button class="audioButton" onclick="playSound('audio/banana.mp3')">🔊</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Flashcards Interativos</p>
+    </footer>
+    <script>
+        function playSound(src) {
+            const audio = new Audio(src);
+            audio.play();
+        }
+    </script>
+</body>
+</html>
